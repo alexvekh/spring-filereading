@@ -14,9 +14,7 @@ public class FileReadingApp {
     ApplicationContext context = new AnnotationConfigApplicationContext(FileReadingApp.class);
     
     FileProcessorService fps = (FileProcessorService) context.getBean("fileProcessorService");
-    
-    //FileProcessorService fps = new FileProcessorService();               // (not need) 
-    
+       
     fps.processFile();
     
   }

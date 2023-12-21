@@ -5,6 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class FileReadingService {
   
   public List<String> readFile (String filename) {
